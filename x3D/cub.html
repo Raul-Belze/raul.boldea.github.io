@@ -5,24 +5,44 @@
     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
 </head>
 <body>
-	<p>UI version number: 2018.03.09.0.1
+	<p>UI version number: 2018.03.09.0.2
 	<x3d width = "600" height = "400">
 		<scene>
 			<shape>
 				<appearance>
-					<Material diffuseColor='1,0,0' transparency='0.5'/>
+					<Material diffuseColor='1,0,0'/>
 				</appearance>
 				<box>
 				</box>
 				
 			</shape>
-			<transform>
+			<transform translation = "3 0 0">
 				<shape>
 					<appearance>
-						<Material diffuseColor='1,0,0' transparency='0.5'/>
+						<Material diffuseColor='0,0,1'/>
 					</appearance>
-					<box>
-					</box>
+					<sphere>
+					</sphere>
+				
+				</shape>
+			</transform>
+			<transform translation = "-3 0 0">
+				<shape>
+					<appearance>
+						<Material diffuseColor='0,1,0'/>
+					</appearance>
+					<cone>
+					</cone>
+				
+				</shape>
+			</transform>
+			<transform translation = "-7 0 0">
+				<shape>
+					<appearance>
+						<Material diffuseColor='0,1,0'/>
+					</appearance>
+					<text string = "Boldea Raul">
+					</text>
 				
 				</shape>
 			</transform>
