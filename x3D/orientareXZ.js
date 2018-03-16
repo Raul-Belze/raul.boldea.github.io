@@ -9,5 +9,5 @@ function on_device_orientation(e)
 	var x = radius * Math.cos(e.alpha * Math.PI / 180);
 	var z = radius * Math.cos(e.alpha * Math.PI / 180);
 	viewpoint.setAttribute("position", x + " 0 " + z); 
-	viewpoint.setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
+	viewpoint.setAttribute("orientation","0 1 0 " + e.gamma * Math.PI / 180);
 }
