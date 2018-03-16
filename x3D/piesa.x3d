@@ -1,0 +1,9 @@
+<x3d>
+	<shape>
+		<appearance>
+			<Material diffuseColor='1,0,0'/>
+		</appearance>
+		<box>
+		</box>
+	</shape>
+</x3d>
