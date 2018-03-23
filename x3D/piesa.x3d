@@ -1,9 +1,9 @@
-<x3d>
-	<shape>
-		<appearance>
+<X3D>
+	<Shape>
+		<Appearance>
 			<Material diffuseColor='1,0,0'/>
-		</appearance>
-		<box>
-		</box>
-	</shape>
-</x3d>
+		</Appearance>
+		<Box>
+		</Box>
+	</Shape>
+</X3D>
