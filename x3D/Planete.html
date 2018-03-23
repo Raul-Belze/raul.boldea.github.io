@@ -57,6 +57,18 @@
 			</Transform>
 			</Transform>	
 			
+				<Transform DEF = "planeta5">
+		<Transform translation = "6 0 0">
+			<Shape>
+				<appearance>
+					<Material diffuseColor='0.5,1,1'/>
+				</appearance>
+				<Sphere radius = "0.4">
+				</Sphere>
+			</Shape>
+			</Transform>
+			</Transform>	
+			
 			<TimeSensor DEF = "timer1" cycleInterval = '4' loop = "true"></TimeSensor>
 			<OrientationInterpolator DEF ="path1" key ="0 0.5 1" keyValue = "0 0 0 0, 0 0 1 3.14, 0 0 1 6.28"></OrientationInterpolator	>
 			<Route fromNode = "timer1" fromField ="fraction_changed" toNode = "path1" toField = "set_fraction"></Route>
@@ -76,6 +88,11 @@
 			<OrientationInterpolator DEF ="path4" key ="0 0.5 1" keyValue = "0 0 0 0, 0 0 1 3.14, 0 0 1 6.28"></OrientationInterpolator	>
 			<Route fromNode = "timer4" fromField ="fraction_changed" toNode = "path4" toField = "set_fraction"></Route>
 			<Route fromNode = "path4" fromField ="value_changed" toNode = "planeta4" toField = "set_rotation"></Route>
+			
+			<TimeSensor DEF = "timer5" cycleInterval = '188' loop = "true"></TimeSensor>
+			<OrientationInterpolator DEF ="path5" key ="0 0.5 1" keyValue = "0 0 0 0, 0 0 1 3.14, 0 0 1 6.28"></OrientationInterpolator	>
+			<Route fromNode = "timer5" fromField ="fraction_changed" toNode = "path5" toField = "set_fraction"></Route>
+			<Route fromNode = "path5" fromField ="value_changed" toNode = "planeta5" toField = "set_rotation"></Route>
 		</Scene>
 	</X3D>
 </body>
