@@ -5,7 +5,7 @@
 	<link rel='stylesheet' type='text/css' href='x3d.css'></link> 
 </head>
 <body>
-	<p>UI version number: 2018.05.30.0.1
+	<p>UI version number: 2018.05.30.0.5
 	<x3d width = "800" height = "600">
 		<scene>
 		
@@ -262,9 +262,9 @@
 			<!-- /Perete Bucatarie legatura cu baie -->
 										
 			<!-- Perete Baie -->
-			<Transform translation='-80 20 30'>
+			<Transform translation='-80 20 20'>
 				<Transform rotation='0 1 0 1.57'>
-					<Transform scale='20 20 0.01'>
+					<Transform scale='10 20 0.01'>
 						<shape DEF = "qub">
 							<appearance>
 								<material diffuseColor = "1 1 1"/>
@@ -274,6 +274,20 @@
 					</Transform>
 				</Transform>
 			</Transform>
+				<!-- Usa Baie -->
+				<Transform translation='-80 20 40'>
+					<Transform rotation='0 1 0 1.57'>
+						<Transform scale='10 20 0.01'>
+							<shape DEF = "qub">
+								<appearance>
+									<ImageTexture url ="usa-interior.jpg"></ImageTexture>
+								</appearance>
+								<box></box>
+							</shape>
+						</Transform>
+					</Transform>
+				</Transform>				
+				<!-- /Usa Baie -->
 			<!-- /Perete Baie -->
 			
 			<!-- Perete Hol 1 -->
@@ -293,9 +307,9 @@
 
 						
 			<!-- Perete Hol 2 -->
-			<Transform translation='-25 20 30'>
+			<Transform translation='-36 20 30'>
 				<Transform rotation='0 1 0 3.14'>
-					<Transform scale='38 20 0.01'>
+					<Transform scale='27 20 0.01'>
 						<shape DEF = "qub">
 							<appearance>
 								<material diffuseColor = "1 1 1"/>
@@ -305,10 +319,25 @@
 					</Transform>
 				</Transform>
 			</Transform>
+				
+				<!-- Usa Hol 2 -->
+				<Transform translation='-2 20 30'>
+					<Transform rotation='0 1 0 3.14'>
+						<Transform scale='8 20 0.01'>
+							<shape DEF = "qub">
+								<appearance>
+									<ImageTexture url ="usa-interior.jpg"></ImageTexture>
+								</appearance>
+								<box></box>
+							</shape>
+						</Transform>
+					</Transform>
+				</Transform>			
+				<!-- Usa Hol 2 -->
 			<!-- /Perete Hol 2 -->
 			
 			<!-- Perete Hol 3 -->
-			<Transform translation='13 20 40'>
+			<Transform translation='6 20 40'>
 				<Transform rotation='0 1 0 1.57'>
 					<Transform scale='10 20 0.01'>
 						<shape DEF = "qub">
@@ -320,6 +349,7 @@
 					</Transform>
 				</Transform>
 			</Transform>
+				
 			<!-- /Perete Hol 3 -->
 			
 			<!-- Perete Camera - Hol 1 -->
@@ -335,6 +365,21 @@
 					</Transform>
 				</Transform>
 			</Transform>
+							<!-- Usa Camera - Hol 1 -->
+				<Transform translation='-23 20 -26'>
+					<Transform rotation='0 1 0 3.14'>
+						<Transform scale='8 20 0.04'>
+							<shape DEF = "qub">
+								<appearance>
+									<ImageTexture url ="usa-interior.jpg"></ImageTexture>
+								</appearance>
+								<box></box>
+							</shape>
+						</Transform>
+					</Transform>
+				</Transform>			
+				<!-- Usa Camera - Hol 1 -->
+				
 			<!-- /Perete Camera - Hol 1 -->
 						
 			<!-- Perete Camera Hol Iesire -->
@@ -350,6 +395,21 @@
 					</Transform>
 				</Transform>
 			</Transform>
+			
+										<!-- Usa Camera - Hol Iesire -->
+				<Transform translation='6 20 -38'>
+					<Transform rotation='0 1 0 1.57'>
+						<Transform scale='8 20 0.04'>
+							<shape DEF = "qub">
+								<appearance>
+									<ImageTexture url ="usa-interior.jpg"></ImageTexture>
+								</appearance>
+								<box></box>
+							</shape>
+						</Transform>
+					</Transform>
+				</Transform>			
+				<!-- Usa Camera - Hol Iesire -->
 			<!-- /Perete Camera Hol Iesire -->
 						
 			<!-- Perete Camere Iesire -->
@@ -365,14 +425,29 @@
 					</Transform>
 				</Transform>
 			</Transform>
+			
+													<!-- Usa Camera - Hol Iesire -->
+				<Transform translation='45 20 0'>
+					<Transform rotation='0 1 0 3.14'>
+						<Transform scale='8 20 0.04'>
+							<shape DEF = "qub">
+								<appearance>
+									<ImageTexture url ="usa-interior.jpg"></ImageTexture>
+								</appearance>
+								<box></box>
+							</shape>
+						</Transform>
+					</Transform>
+				</Transform>			
+				<!-- Usa Camera - Hol Iesire -->
 			<!-- /Perete Camere Iesire -->
 			
-			<Transform translation='-55 23 50.1'>
-				<Transform rotation = '0 0 1 1.57'>
-				<Transform scale='5 10 0.3'>
+			<Transform translation='-120 28 30'>
+				<Transform rotation = '0 1 0 1.57'>
+				<Transform scale='6 6 0.1'>
 					<shape> 
 						<appearance>
-							<material diffusecolor = "0.86 0.86 0.86" transparency = "0.5"/>
+							<material diffusecolor = "0.86 0.86 0.86" transparency = "0.01"/>
 						</appearance>
 						<box> </box>
 					</shape>
