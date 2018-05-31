@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Proiect Final</title>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+<body>
+	<p>UI version number: 2018.05.13.1</p>
+	<p id = "id_business_level"></p>
+	<X3D width = "1300" height = "500">
+
+<Scene>
+<Viewpoint description='Front view, 4 inches above ground' position='0 4 20'/> 
+<Viewpoint description='Side view, 6 inches above ground' orientation='0 1 0 1.57' position='25 6 0'/> 
+<Viewpoint description='Top-down view, 20 inches above' orientation='1 0 0 -1.57' position='0 28 0'/> 
+<Background groundAngle='1.309 1.570796' groundColor='0.1 0.1 0 0.4 0.25 0.2 0.6 0.6 0.6' skyAngle='1.309 1.571' skyColor='0 0.2 0.7 0 0.5 1 1 1 1'/> 
+<!-- Upper road surface is elevated y=8 inches in the air --> 
+<Transform translation='0 8 0'>
+<Group DEF='Road'>
+<Shape>
+<!-- Road model is x=20 inches long by z=7 inches wide, with posterboard y=0.25 inches thick --> 
+<Box size='20 0.2 7'/> 
+<!-- Road surface color is grey --> 
+<Appearance DEF='GreyAppearance'>
+<Material diffuseColor='0.4 0.4 0.4'/>
+</Appearance>
+</Shape> 
+<Transform translation='0 0.2 0.3'>
+<Shape DEF='WhiteLine'>
+<Box size='20 0.01 0.4'/> 
+<Appearance DEF='WhiteAppearance'>
+<Material diffuseColor='1 1 1' emissiveColor='0.5 0.5 0.5'/>
+</Appearance>
+</Shape>
+</Transform> 
+<Transform translation='0 0.2 -0.3'>
+<Shape USE='WhiteLine'/>
+</Transform>
+</Group>
+</Transform> 
+<!-- Lower road is on the ground at y=0 inches, rotated 90 degrees around y axis --> 
+<Transform rotation='0 1 0 1.57' translation='0 0.1 0'>
+<Group USE='Road'/>
+</Transform> 
+<!-- Vertical center of y=8 inch tall pillar is y=4 inches in the air --> 
+<!-- Center of each column matches top-down diagram --> 
+<Transform DEF='ColumnA' translation='-6 4 -2'>
+<Shape DEF='Column'>
+<Cylinder height='8'/> 
+<Appearance USE='GreyAppearance'/>
+</Shape>
+</Transform> 
+<Transform DEF='ColumnB' translation='6 4 -2'>
+<Shape USE='Column'/>
+</Transform> 
+<Transform DEF='ColumnC' translation='-6 4 2'>
+<Shape USE='Column'/>
+</Transform> 
+<Transform DEF='ColumnD' translation='6 4 2'>
+<Shape USE='Column'/>
+</Transform>
+</Scene>
+	</X3D>
+</body>
+</html>

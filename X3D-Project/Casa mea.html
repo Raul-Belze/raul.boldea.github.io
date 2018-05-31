@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Proiect Casa Mea in X3D</title>
+	<script type='text/javascript' src='x3d.js'> </script> 
+	<link rel='stylesheet' type='text/css' href='x3d.css'></link> 
+</head>
+<body>
+	<p>UI version number: 2018.05.30.0.1
+	<x3d width = "800" height = "600">
+		<scene>
+		
+			<!-- Podeaua Casa -->
+			<Transform scale='80 0.05 50'>
+				<shape DEF = "qub">
+					<appearance>
+						<ImageTexture url ="parchet-paltin.jpg"></ImageTexture>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</Transform>
+			<!-- /Podeaua Casa -->
+			<!--Podeaua Bucatarie -->
+			<Transform translation='-100 0 -20'>
+				<Transform scale='20 0.05 30'>
+					<shape DEF = "qub">
+						<appearance>
+							<ImageTexture url ="parchet-laminat.jpg"></ImageTexture>
+						</appearance>
+
+						<box></box>
+
+					</shape>
+				</Transform>
+			</Transform>
+			<!--/Podeaua Bucatarie -->
+			<!--Podea Baie -->
+			<Transform translation='-100 0 20'>
+				<Transform scale='-20 0.05 30'>
+					<shape DEF = "qub">
+						<appearance>
+							<ImageTexture url ="mozaic.jpg"></ImageTexture>
+						</appearance>
+
+						<box></box>
+
+					</shape>
+				</Transform>
+			</Transform>
+			<!--/Podea Baie -->
+			<!-- Perete Dreapta -->
+			<Transform translation='80 20 0'>
+				<Transform rotation='0 1 0 1.57'>
+					<Transform scale='50 20 0.01'>
+						<shape DEF = "qub">
+							<appearance>
+								<material diffuseColor = "0.86 0.86 0.86"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</Transform>
+				</Transform>
+			</Transform>
+			<!-- /Perete Dreapta -->
+			<!-- Perete Stanga -->
+			<Transform translation='-120 20 0'>
+				<Transform rotation='0 1 0 1.57'>
+					<Transform scale='50 20 0.01'>
+						<shape DEF = "qub">
+							<appearance>
+								<material diffuseColor = "0.86 0.86 0.86"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</Transform>
+				</Transform>
+			</Transform>
+			<!-- /Perete Stanga -->
+		</scene>
+	</x3d>
+</body>
+</html>
