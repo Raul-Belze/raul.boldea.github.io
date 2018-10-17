@@ -1,0 +1,29 @@
+<html ng-app="root">
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="root.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	</head>
+	<body>
+		<div ng-controller="index">
+		  <table>
+			  <thead>
+				  <tr>
+					  <td>Id</td>
+					  <td>Name</td>
+				  </tr>
+			  </thead>
+			  <tbody>
+				<tr ng-repeat ="product in products" ng-class="{oddRow: $odd}">
+					<td>
+						{{product.id}}
+					</td>
+					<td>
+						{{product.name}}
+					</td>
+				</tr>
+			  </tbody>
+		  </table>
+		</div>
+	</body>
+</html>

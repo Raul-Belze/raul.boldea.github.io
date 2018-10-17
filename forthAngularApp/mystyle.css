@@ -1,0 +1,9 @@
+.oddRow { 
+background-color: lightblue; 
+}
+table { 
+border-spacing: 0; 
+}
+td {
+border: 1px solid black; padding: 0 1em 0 1em; 
+}
