@@ -1,0 +1,14 @@
+<html ng-app="root">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="root.js"></script>
+	</head>
+	<body>
+		<div ng-controller="index">
+			<div><input type="checkbox" ng-model="isFirstElementVisible" /> Is first element visible</div>
+			<div><input type="checkbox" ng-model="isSecondElementVisible" /> Is second element visible</div>
+			<div ng-show="isFirstElementVisible">First Element</div>
+			<div ng-if="isFirstElementVisible">{{message}}</div>
+		</div>
+	</body>
+</html>
