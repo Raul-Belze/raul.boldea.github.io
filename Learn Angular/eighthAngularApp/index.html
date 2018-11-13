@@ -7,6 +7,12 @@
 
 	</head>
     <body>
-        <div ng-controller="index">{{product}}</div>
+        <div > First Number is: <input type="text" ng-model="firstNumber"> </div>
+		<div > Second Number is: <input type="text" ng-model="secondNumber"> </div>
+
+		<div ng-model = "firstNumber">{{firstNumber}} </div>
+		<div ng-model = "secondNumber"> {{secondNumber}} </div>
+		
+		<div ng-controller="index">Result is  : {{product}}</div>
     </body>
 </html>	
